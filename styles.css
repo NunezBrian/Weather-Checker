@@ -1,0 +1,21 @@
+body {
+    background-color: #e2e3e5;
+}
+
+.search-area {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.current-weather {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.forecast-area .card {
+    width: calc(20% - 0.5rem); /* Adjust width for 5 cards */
+}
+
+

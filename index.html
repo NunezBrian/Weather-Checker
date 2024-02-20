@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Dashboard</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 mb-3">
+            <div class="search-area">
+                <h4>Search for a City:</h4>
+                <input type="text" id="cityInput" class="form-control mb-2" placeholder="San Diego">
+                <button id="searchButton" class="btn btn-primary btn-block">Search</button>
+                <div id="cityList" class="list-group mt-3">
+                    <!-- Repeat for each city in the list -->
+                    <button type="button" class="list-group-item list-group-item-action">Atlanta</button>
+                    <!-- ... other cities ... -->
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="current-weather mb-3 p-3 shadow-sm">
+                <h2 id="currentCity">Atlanta (9/13/2022)</h2>
+                <div id="currentWeather">
+                    <p>Temp: 76.62°F</p>
+                    <p>Wind: 8.43 MPH</p>
+                    <p>Humidity: 44 %</p>
+                </div>
+            </div>
+            <div class="forecast-area">
+                <h4>5-Day Forecast:</h4>
+                <div class="d-flex justify-content-between">
+                    <!-- Repeat for each day in the forecast -->
+                    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                        <div class="card-header">9/14/2022</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Temp: 63.55°F</h5>
+                            <p class="card-text">Wind: 3.94 MPH</p>
+                            <p class="card-text">Humidity: 63 %</p>
+                        </div>
+                    </div>
+                    <!-- ... other days ... -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.7.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
